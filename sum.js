@@ -1,3 +1,7 @@
 module.export = function sum(a, b) {
-  return a + b;
+  const res = a - b;
+  if (Number.isNaN(res)) {
+    throw new Error("Invalide Operation");
+  }
+  return res;
 };
